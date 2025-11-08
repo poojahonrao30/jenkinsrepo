@@ -1,15 +1,15 @@
 pipeline {
      agent any
-     stages{
-            stage('checkout code')
+     stages {
+            stage('checkout code') {
             steps{
                 checkout scm
             }
         }
      stage('extract data'){
-           steps{
+           steps {
            bat "C:\\Users\\pooja\\AppData\\Local\\Programs\\Python\\Python313\\python.exe extract.py"
-    }
-}
-}
-      
+                 }
+             }
+            }
+       }     
